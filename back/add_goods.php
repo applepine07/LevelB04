@@ -61,10 +61,13 @@
     </div>
 </form>
 <script>
+    // 載入頁面時
 $("#big").load('api/get_type.php',()=>{
+    // ↑先載入大分類，↓再載入隨應的中分類，所以寫在裡面
     $("#mid").load('api/get_type.php',{parent:$("#big").val()})
 })
 
+// 有變動時
 $("#big").on("change",function(){
     $("#mid").load("api/get_type.php",{parent:$("#big").val()})
 })
