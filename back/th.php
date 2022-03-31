@@ -92,6 +92,7 @@ function show(dom,id,sh){
 }
 function newType(type){
     let name,parent
+    // 依不同的type準備不同的name和parent送到後端api
     switch(type){
         case "big":
             name=$("#big").val();
@@ -103,13 +104,18 @@ function newType(type){
         break;
     }
     $.post("api/save_type.php",{name,parent},(res)=>{
+        // res應該是coding過程中console出來檢查用↑
+        // reload就會自動載入存入的結果，因為我們這頁面有設$("#parent").load("api/get_type.php")
         location.reload();
     })
 }
 
 function edit(dom,id){
+    // 去抓到html中的文字，因為我們用到this，所以是dom，參數命名用dom以標記
     let text=$(dom).parent().prev().text();
+    // 然後用來填給prompt的預設文字
     let name=prompt("請輸入要修改的分類文字",text);
+    // 如果prompt輸入文字框不為空，我們才要送到後端api
     if(name!=null){
         $.post("api/save_type.php",{id,name},(res)=>{
             location.reload();
