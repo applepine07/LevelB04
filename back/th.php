@@ -76,8 +76,10 @@
 <script>
 $("#parent").load("api/get_type.php")
 
+// 傳三個參數，this、id、1或0
 function show(dom,id,sh){
     $.post("api/save_goods.php",{id,sh},()=>{
+        // 傳位參數改變資料表後，更改前台狀態
         switch(sh){
             case 1:
                 $(dom).parent().prev().text("販售中")
@@ -86,7 +88,7 @@ function show(dom,id,sh){
                 $(dom).parent().prev().text("已下架")
             break;
         }
-
+        // 或用reload也可以，因為我們有用判斷式直接依改後的資料表reload判斷就好/// <?=($g['sh']==1)?"販售中":"已下架";?>
         //location.reload()
     })
 }

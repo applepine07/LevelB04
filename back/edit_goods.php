@@ -1,5 +1,5 @@
 <?php
-
+// 連結會傳商品id，以下都是該商品在good資料表的資料喔
 $g=$Goods->find($_GET['id']);
 ?>
 
@@ -68,13 +68,14 @@ $g=$Goods->find($_GET['id']);
     </div>
 </form>
 <script>
+    // 頁面載入時
 $("#big").load('api/get_type.php',()=>{
 
-    //大分類的選項們載入完成時,去選定商品的大分類
+    //大分類的選項們載入完成時,用該商品的big(商品資料表有big欄位)和prop去選定商品的大分類
     $("#big option[value='<?=$g['big'];?>']").prop('selected',true);
-
+// 大分類的選項載入完成後，依該商品的big欄位去撈parent是big，也就是撈該大分類的中分類們
     $("#mid").load('api/get_type.php',{parent:$("#big").val()},()=>{
-        //中分類的選項們載入完成時,去選定商品的中分類
+        //中分類的選項們載入完成時,用mid及prop去選定商品的中分類
         $("#mid option[value='<?=$g['mid'];?>']").prop('selected',true);
     })
 })
