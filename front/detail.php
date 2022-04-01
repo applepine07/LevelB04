@@ -26,6 +26,7 @@ echo "<h1 class='ct'>{$g['name']}</h1>";
 <script>
 function buy(id){
     //location.href="?do=bucart&id"+id+"&qt="+$("#qt").val();
+    // ↓用上引號與用↑雙引號帶參數的差別
     location.href=`?do=buycart&id=${id}&qt=${$("#qt").val()}`;
 }
 
