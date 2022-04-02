@@ -60,7 +60,7 @@ if (empty($_SESSION['cart'])) {
 function delCart(id) {
     // 送id過去
     $.post("api/del_cart.php", {id}, () => {
-        // 再回來購物車頁面
+        // 再回來購物車頁面↓↓↓這很重要，要清空網址
         location.href = '?do=buycart';
     })
 }

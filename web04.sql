@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=5.1.3">
-    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=2806868384ltr&server=1">
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=31195426ltr&server=1">
     <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=5.1.3" media="print" id="printcss">
     <title>localhost / 127.0.0.1 | phpMyAdmin 5.1.3</title>
     <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.1.3"></script>
@@ -56,7 +56,7 @@
 
 <script data-cfasync="false" type="text/javascript">
 // <![CDATA[
-CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"zh_TW",server:"1",table:"",db:"",token:"322d3274443626437b33624121665135",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"瀏覽",pma_text_left_default_tab:"結構",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"zh_TW",server:"1",table:"",db:"",token:"61544c54665e403b552476786d247a22",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"瀏覽",pma_text_left_default_tab:"結構",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
 var firstDayOfCalendar = '0';
 var themeImagePath = '.\/themes\/pmahomme\/img\/';
 var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
@@ -260,7 +260,7 @@ $(function() {
       </div>
       <div id="pma_navigation_tree" class="list_container synced highlight autoexpand">
 
-  <div class="pma_quick_warp"><div class="drop_list"><button title="最近使用的資料表" class="drop_button btn">最近使用</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=admin">`web04`.`admin`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=bottom">`web04`.`bottom`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=type">`web04`.`type`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=ord">`web04`.`ord`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=goods">`web04`.`goods`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=member">`web04`.`member`</a></li></ul></div><div class="drop_list"><button title="最愛資料表" class="drop_button btn">最愛</button><ul id="pma_favorite_list"><li class="warp_link">沒有「最愛」資料表。</li></ul></div><div class="clearfloat"></div></div>
+  <div class="pma_quick_warp"><div class="drop_list"><button title="最近使用的資料表" class="drop_button btn">最近使用</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=ord">`web04`.`ord`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=type">`web04`.`type`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=goods">`web04`.`goods`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=admin">`web04`.`admin`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=bottom">`web04`.`bottom`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=web04&table=member">`web04`.`member`</a></li></ul></div><div class="drop_list"><button title="最愛資料表" class="drop_button btn">最愛</button><ul id="pma_favorite_list"><li class="warp_link">沒有「最愛」資料表。</li></ul></div><div class="clearfloat"></div></div>
 
 <div class="clearfloat"></div>
 
@@ -284,7 +284,7 @@ $(function() {
                   <div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="index.php&#x3F;route&#x3D;&#x25;2Fexport&amp;server&#x3D;1" class="config-form disableAjax">
   <input type="hidden" name="tab_hash" value="">
       <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
-    <input type="hidden" name="token" value="322d3274443626437b33624121665135">
+    <input type="hidden" name="token" value="61544c54665e403b552476786d247a22">
   <input type="hidden" name="submit_save" value="Navi">
 <ul class="tabs responsivetable row">
       <li><a href="#Navi_panel">導覽面板</a></li>
@@ -561,7 +561,45 @@ $.extend(defaultValues, {
                     <span class="hide" id="instructions-1">
                         請按 Enter 執行查詢                    </span>
                 </div>
-                            </div><!-- console_message_container -->
+                                                            <div class="message history collapsed hide select"
+                            targetdb="web04" targettable="ord">
+                            <div class="action_content">
+                    <span class="action collapse">
+            摺疊
+                    </span>
+                            <span class="action expand">
+            展開
+                    </span>
+                            <span class="action requery">
+            重新查詢
+                    </span>
+                            <span class="action edit">
+            編輯
+                    </span>
+                            <span class="action explain">
+            語句分析
+                    </span>
+                            <span class="action profiling">
+            效能分析
+                    </span>
+                            <span class="action bookmark">
+            書籤
+                    </span>
+                            <span class="text failed">
+            查詢失敗
+                    </span>
+                            <span class="text targetdb">
+            資料庫
+                            : <span>web04</span>
+                    </span>
+                            <span class="text query_time">
+            查詢時間
+                            : <span>於目前連線階段</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `ord`</span>
+                        </div>
+                                                </div><!-- console_message_container -->
             <div class="query_input">
                 <span class="console_query_input"></span>
             </div>
