@@ -25,17 +25,17 @@
                 <a href="?do=look">購物流程</a> |
                 <a href="?do=buycart">購物車</a> |
 
-                <?php
-                if (isset($_SESSION['mem'])) {
-                ?>
-                    <a href="javascript:logout('mem')">登出</a> |
-                <?php
-                } else {
-                ?>
-                    <a href="?do=login">會員登入</a> |
-                <?php
-                }
-                ?>
+<?php
+if (isset($_SESSION['mem'])) {
+?>
+    <a href="javascript:logout('mem')">登出</a> |
+<?php
+} else {
+?>
+    <a href="?do=login">會員登入</a> |
+<?php
+}
+?>
 
 
                 <?php

@@ -25,31 +25,7 @@ $mem=$Mem->find(['acc'=>$_SESSION['mem']]);
         <td class="pp"><input type="text" name="tel" id="tel" value="<?=$mem['tel'];?>"></td>
     </tr>
 </table>
-<table class="all">
-    <tr class="tt ct">
-        <td>商品名稱</td>
-        <td>編號</td>
-        <td>數量</td>
-        <td>單價</td>
-        <td>小計</td>
-    </tr>
-    <?php 
-    $total=0;
-    foreach($_SESSION['cart'] as  $id=> $qt){
-        $item=$Goods->find($id);
-    ?>
-    <tr class="pp ct">
-        <td><?=$item['name'];?></td>
-        <td><?=$item['no'];?></td>
-        <td><?=$qt;?></td>
-        <td><?=$item['price'];?></td>
-        <td><?=$item['price']*$qt;?></td>
-    </tr>
-    <?php 
-    $total=$total+($item['price']*$qt);
-    }
-    ?>
-</table>
+//加總購物車中的商品價格
 <div class="all tt ct">
     總價:<?=$total;?>
 </div>
